@@ -27,9 +27,9 @@ const App = () => {
       <div>
         {todo.map((t,index) => {
           return (
-            <div key={index}>
-              {t} <button onClick={()=>handleDelete(index)} style={{marginleft:"100px"}}>Delete</button>{" "}
-            </div>
+            <ul key={index}>
+              <li>{t} <button onClick={()=>handleDelete(index)} style={{marginLeft:"100px"}}>Delete</button>{" "}</li>
+            </ul>
           );
         })}
       </div>
